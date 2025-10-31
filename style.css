@@ -89,3 +89,61 @@ body {
 .fixed-button:hover {
   background-color: #0056b3; /* Warna latar belakang saat dihover */
 }
+/* CSS untuk Modal */
+.modal {
+  display: none; /* Tersembunyi secara default */
+  position: fixed; /* Tetap di tempat */
+  z-index: 1; /* Menutupi konten lain */
+  left: 0;
+  top: 0;
+  width: 100%; /* Lebar penuh */
+  height: 100%; /* Tinggi penuh */
+  overflow: auto; /* Aktifkan scroll jika diperlukan */
+  background-color: rgba(0,0,0,0.4); /* Hitam dengan opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% dari atas dan tengah */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Bisa lebih atau kurang, tergantung ukuran layar */
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* CSS untuk Rating Stars */
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    float: right;
+    font-size: 30px;
+    color: #ddd;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+    color: #ffc107;
+}
