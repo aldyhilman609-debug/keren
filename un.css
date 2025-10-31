@@ -1,0 +1,63 @@
+/* style.css */
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    width: 60px; /* Lebar awal sidebar (hanya ikon) */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: width 0.3s; /* Transisi untuk animasi lebar */
+}
+
+.sidebar:hover {
+    width: 200px; /* Lebar sidebar saat dihover */
+}
+
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar span {
+    white-space: nowrap; /* Mencegah teks turun baris */
+    overflow: hidden; /* Menyembunyikan teks yang melebihi lebar */
+    width: 0; /* Lebar awal teks adalah 0 */
+    transition: width 0.3s; /* Transisi untuk animasi lebar teks */
+}
+
+.sidebar:hover span {
+    width: 120px; /* Lebar teks saat dihover */
+}
+
+#main {
+    margin-left: 60px; /* Lebar awal sidebar */
+    padding: 20px;
+    transition: margin-left 0.3s; /* Transisi untuk animasi margin */
+}
+
+#main {
+    margin-left: 60px; /* Lebar awal sidebar */
+    padding: 20px;
+    transition: margin-left 0.3s; /* Transisi untuk animasi margin */
+}
+
+.sidebar:hover + #main {
+    margin-left: 200px; /* Lebar sidebar saat dihover */
+}
