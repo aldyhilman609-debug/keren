@@ -22,7 +22,7 @@ body {
   height: 320px;
   border-radius: 20px;
   overflow: hidden;
-  left: -50px;
+  left: -100px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   transition: transform 0.4s ease;
   -webkit-transition: transform 0.4s ease;
