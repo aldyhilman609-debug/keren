@@ -22,6 +22,7 @@ body {
   height: 320px;
   border-radius: 20px;
   overflow: hidden;
+  left: -50px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   transition: transform 0.4s ease;
   -webkit-transition: transform 0.4s ease;
@@ -75,7 +76,7 @@ body {
 .fixed-button {
   position: fixed; /* Membuat elemen tetap di posisinya */
   bottom: 20px; /* Jarak dari bawah layar */
-  right: 20px; /* Jarak dari kanan layar */
+  right: 50px; /* Jarak dari kanan layar */
   background-color: #007bff; /* Warna latar belakang */
   color: white; /* Warna teks */
   padding: 10px 20px; /* Padding di dalam tombol */
@@ -88,4 +89,25 @@ body {
 
 .fixed-button:hover {
   background-color: #0056b3; /* Warna latar belakang saat dihover */
+}
+
+.fade{
+  opacity: 0;
+  animation: Slide-down 2s forwards;
+}
+@keyframes Slide-down {
+  from {opacity: 0;
+  transform: translateY(-20px);}
+  to {opacity: 1;
+  transform: translateY(0);}
+}
+.fade1{
+  opacity: 0;
+  animation: Slide-down 6s forwards;
+}
+@keyframes Slide-down {
+  from {opacity: 0;
+  transform: translateY(-40px);}
+  to {opacity: 1;
+  transform: translateY(0);}
 }
