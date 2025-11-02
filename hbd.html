@@ -101,7 +101,7 @@
         }
 
         function createAdditionalFireworks() {
-            const numberOfAdditionalParticles = 20;
+            const numberOfAdditionalParticles = 10; // Mengurangi jumlah partikel
             // Set interval untuk menjalankan kembang api tambahan setiap 5 menit
             setInterval(() => {
                 for (let i = 0; i < numberOfAdditionalParticles; i++) {
@@ -119,8 +119,8 @@
             particle.style.top = `${y}px`;
             particle.style.backgroundColor = color;
             container.appendChild(particle);
-            const targetX = x + (Math.random() - 0.5) * 300;
-            const targetY = y + (Math.random() - 0.5) * 300;
+            const targetX = x + (Math.random() - 0.5) * 150; // Mengurangi jarak mencar
+            const targetY = y + (Math.random() - 0.5) * 150; // Mengurangi jarak mencar
             const duration = Math.random() * 1000 + 500;
             particle.animate([{
                 transform: 'translate(0, 0)',
@@ -181,7 +181,7 @@
 </head>
 
 <body>
-    <audio id="myAudio" src="" autoplay loop muted></audio>
+    <audio id="myAudio" src="https://files.catbox.moe/yghrhd.mp3" autoplay loop muted></audio>
     <div class="overlay" id="lagOverlay">
         mau hadiah? tekan oke
         <button onclick="continuePlaying()">Oke</button>
