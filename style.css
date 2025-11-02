@@ -18,11 +18,11 @@ body {
 /* Card Styling */
 .card {
   position: relative;
+  left: 20px; /* Moves the card 20px to the right */
   width: 200px;
   height: 320px;
   border-radius: 20px;
   overflow: hidden;
-  left: -100px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   transition: transform 0.4s ease;
   -webkit-transition: transform 0.4s ease;
@@ -91,19 +91,25 @@ body {
   background-color: #0056b3; /* Warna latar belakang saat dihover */
 }
 
-.fade{
+.fade {
   opacity: 0;
+  left: 100px; /* or any value like 20px, 50%, etc. */
+  position: relative; /* or absolute/fixed depending on your layout */
   animation: Slide-down 2s forwards;
 }
+
+
 @keyframes Slide-down {
   from {opacity: 0;
   transform: translateY(-20px);}
   to {opacity: 1;
   transform: translateY(0);}
 }
-.fade1{
+.fade1 {
   opacity: 0;
-  animation: Slide-down 6s forwards;
+  left: 100px; /* or any value like 20px, 50%, etc. */
+  position: relative; /* or absolute/fixed depending on your layout */
+  animation: Slide-down 2s forwards;
 }
 @keyframes Slide-down {
   from {opacity: 0;
